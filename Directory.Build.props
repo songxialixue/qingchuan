@@ -1,0 +1,7 @@
+﻿<Project>
+  <PropertyGroup>
+    <WindowsSdkPackageVersion>10.0.19041.31</WindowsSdkPackageVersion>
+    <Deterministic>true</Deterministic>
+
+  </PropertyGroup>
+</Project>

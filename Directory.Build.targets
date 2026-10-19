@@ -1,0 +1,7 @@
+﻿<Project>
+  <!-- Set the SDK's runtime-pack defaults as well as the generated runtime config. -->
+  <ItemGroup Condition="'$(QingchuanRuntimeVersion)' != ''">
+    <KnownFrameworkReference Update="Microsoft.NETCore.App;Microsoft.WindowsDesktop.App;Microsoft.WindowsDesktop.App.WindowsForms;Microsoft.WindowsDesktop.App.WPF" DefaultRuntimeFrameworkVersion="$(QingchuanRuntimeVersion)" LatestRuntimeFrameworkVersion="$(QingchuanRuntimeVersion)" />
+    <FrameworkReference Update="Microsoft.NETCore.App" RuntimeFrameworkVersion="$(QingchuanRuntimeVersion)" />
+  </ItemGroup>
+</Project>
