@@ -1,10 +1,16 @@
 # 轻传 0.32.1
 
 Windows 与 Android 的局域网文件传输、设备聊天、授权共享和协同工具。正式程序是原生 WinForms / Android 实现；`design/qingchuan` 是同步保留的交互设计。
+1. 设备连接：局域网发现、扫码配对、多设备连接、P2P极速直连、可信设备管理。
+2. 文件互传：文件、文件夹、图片、文字双向传输，支持拖拽、暂停续传、失败重试及历史记录。
+3. 共享文件夹：跨设备浏览、上传下载，支持只读、读写、完全控制权限。
+4. 协同工具：触控板、遥控电脑、手机投屏与控制、实物展台、白板、扩展屏。
+5. 截图工具：截图标注、贴图、离线OCR、二维码识别、发送到设备。
+6. 设置管理：自动接收、设备授权、后台运行、接收目录及记录管理。
 
 ## 从这里开始
 
-- 当前工作副本为 `7_qingchuan`。Windows 和 Android 从本目录构建；旧项目仅作为只读备份。
+- Windows 和 Android 从本目录构建；旧项目仅作为只读备份。
 - Windows 双击 `Start-Qingchuan.cmd`，运行 `artifacts/windows/TransferLab.Windows.exe`；保留同目录 DLL 和 Components，开发运行使用本机 .NET 8 Desktop Runtime。
 - Android 新构建位于 `artifacts/android/Qingchuan.apk`，使用原有签名，包名仍为 `lab.transfer.app`，版本码 42、版本名 0.32.1。覆盖安装保留原有数据。
 - 开发与构建见 [development.md](docs/development.md)，本轮验证状态见 [release-0.32.1.md](docs/release-0.32.1.md)。正式产物与独立源码包位于 `artifacts/release/0.32.1`，是否可发布以验证状态为准。
